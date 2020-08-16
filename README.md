@@ -5,7 +5,7 @@
 
 Ejemplos realizados en componentes funcionales
 
-##### Manejo de datos locales `[useState, useEffect]`
+##### Manejo de datos locales `useState, useEffect`
 
 ```javascript
 
@@ -21,7 +21,7 @@ Ejemplos realizados en componentes funcionales
             setStatic(data)
         }, [])
 ```
-##### Manejo de datos de la api [`JSONPlaceholder`]  `[useState, useEffect]`
+##### Manejo de datos de la api `JSONPlaceholder`  `useState, useEffect`
 
 ```javascript
 const [datos, setStatic] = useState([])
