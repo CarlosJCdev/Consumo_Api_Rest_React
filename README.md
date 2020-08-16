@@ -5,7 +5,7 @@
 
 Ejemplos realizados en componentes funcionales
 
-##### Manejo de datos locales `useState, useEffect`
+##### Manejo de datos locales `useState`  `useEffect`
 
 ```javascript
 
