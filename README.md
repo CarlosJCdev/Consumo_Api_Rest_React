@@ -1,5 +1,5 @@
 # Consumo básico de API Rest con React
-=====================================
+
 
 ![](https://raw.githubusercontent.com/CarlosJCdev/Login-React-Firebase/master/src/icons/react1.png)
 
@@ -9,7 +9,7 @@ Ejemplos realizados en componentes funcionales
 
 ```javascript
 
- const [datos, setStatic] = useState(null)
+ const [datos, setStatic] = useState([])
 
         const data= [
             {id: 1, nombre: 'juan'},
