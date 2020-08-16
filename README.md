@@ -21,3 +21,30 @@ Ejemplos realizados en componentes funcionales
             setStatic(data)
         }, [])
 ```
+##### Manejo de datos de la api [`JSONPlaceholder`]  `[useState, useEffect]`
+
+```javascript
+const [datos, setStatic] = useState([])
+
+        const obtenerDatosAPI= async()=>{
+            const data= await fetch('https://jsonplaceholder.typicode.com/photos')
+            const users= await data.json()
+            console.log(users)
+            setStatic(users)
+        }
+
+        useEffect(()=>{
+            console.log('useEffect')
+            obtenerDatosAPI()
+        }, [])
+
+        return (
+            <div>
+                {
+                    datos.map(valor =>(
+                    <li key={valor.id}>{valor.title}</li>
+                    ))
+                }
+            </div>
+        )
+```
